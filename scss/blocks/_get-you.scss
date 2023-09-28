@@ -1,0 +1,70 @@
+.get-you {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.17);
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px 0px;
+  &__what {
+    text-align: center;
+    font-size: 50px;
+    line-height: 180%;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 28px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+    margin-bottom: 37px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  &__discr {
+    text-align: center;
+  }
+}
+.get-you__row {
+  margin: -220px auto 88px auto;
+}
+@media screen and (max-width: 992px) {
+  .get-you__cards {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .get-you__what {
+    margin-top: 65px;
+    font-size: 30px;
+  }
+  .get-you {
+    gap: 85px 0px;
+  }
+  .get-you__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 68px;
+    &:last-child {
+      margin-bottom: 76px;
+    }
+  }
+  .get-you__card {
+    max-width: 351px;
+  }
+  .get-you__row {
+    margin-bottom: 60px;
+  }
+}

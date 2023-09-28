@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>MONOLITH</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container-header">
+        <div class="header__header_row container">
+          <a href="index.html"
+            ><img class="header__image" src="images/logo (2).svg" alt="logo"
+          /></a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="cataloge.html">Каталог проектов</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about-company.html">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="services.html">Услуги</a>
+              </li>
+              <li class="nav__item hidden" id="basket-hidden">
+                <a class="nav__link" href="basket.html">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="basket.html">
+            <img
+              class="header__icon"
+              src="images/shopping-bag.svg"
+              alt="Корзина"
+            />
+          </a>
+          <button class="header__burger-menu" id="burger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main-page">
+          <div class="container">
+            <h1 class="main-page__title">
+              Живите в доме, каждый сантиметр <br />которого продуман для вас
+            </h1>
+            <p class="main-page__discr">
+              Получи проект частного дома и <br />
+              узнай стоимость его строительства
+            </p>
+            <div class="main-page__buttons">
+              <a href="cataloge.html" class="main-page__button button"
+                >Посмотреть готовые проекты</a
+              >
+              <a href="cataloge.html" class="main-page__button"
+                >Заказать индивидуальный проект</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="main-cataloge container">
+          <h2 class="main-cataloge__title">Каталог проектов:</h2>
+          <div class="main-cataloge__types">
+            <div class="main-cataloge__type">
+              <p class="type-title">1 этажные</p>
+            </div>
+            <div class="main-cataloge__type">от 150м²</div>
+            <div class="main-cataloge__type">от 5 250 000 ₽</div>
+          </div>
+          <div class="main-cataloge__cards container">
+            <div class="main-cataloge__card card">
+              <a href="project.html"
+                ><img class="card__icon" src="images/a-17.jpg" alt="a-17"
+              /></a>
+              <p class="card__discr">Одноэтажные</p>
+              <div class="card__titles-row">
+                <h4 class="card__title">A-17</h4>
+                <div class="card__price">40 000₽</div>
+              </div>
+              <p class="card__property">
+                Габариты: 23,2 х 11,8 Площадь: 263,68 м²
+              </p>
+              <div class="card__buttons">
+                <a href="#" class="card__button"
+                  ><img src="images/korzinka.svg" alt="korzinka"
+                /></a>
+                <a href="project.html" class="card__button button">Подробнее</a>
+              </div>
+            </div>
+            <div class="main-cataloge__card card">
+              <a href="project.html"
+                ><img class="card__icon" src="images/a-110.jpg" alt="a-17"
+              /></a>
+              <p class="card__discr">Одноэтажные</p>
+              <div class="card__titles-row">
+                <h4 class="card__title">A-110</h4>
+                <div class="card__price">40 000₽</div>
+              </div>
+              <p class="card__property">
+                Габариты: 14,8 х 17,3 Площадь: 228.27 м²
+              </p>
+              <div class="card__buttons">
+                <a href="#" class="card__button"
+                  ><img src="images/korzinka.svg" alt="korzinka"
+                /></a>
+                <a href="project.html" class="card__button button">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-cataloge__types">
+            <div class="main-cataloge__type">
+              <p class="type-title">2 этажные</p>
+            </div>
+            <div class="main-cataloge__type">от 250м²</div>
+            <div class="main-cataloge__type">от 8 750 000 ₽</div>
+          </div>
+          <div class="main-cataloge__cards container">
+            <div class="main-cataloge__card card">
+              <a href="project.html">
+                <img class="card__icon" src="images/b-22.jpg" alt="b-22"
+              /></a>
+              <p class="card__discr">Двухэтажные</p>
+              <div class="card__titles-row">
+                <h4 class="card__title">B-22</h4>
+                <div class="card__price">40 000₽</div>
+              </div>
+              <p class="card__property">Площадь: от 250 м²</p>
+              <div class="card__buttons">
+                <a href="#" class="card__button"
+                  ><img src="images/korzinka.svg" alt="korzinka"
+                /></a>
+                <a href="project.html" class="card__button button">Подробнее</a>
+              </div>
+            </div>
+            <div class="main-cataloge__card card">
+              <a href="project.html">
+                <img class="card__icon" src="images/b-109.jpg" alt="b-109"
+              /></a>
+              <p class="card__discr">Двухэтажные</p>
+              <div class="card__titles-row">
+                <h4 class="card__title">B-109</h4>
+                <div class="card__price">40 000₽</div>
+              </div>
+              <p class="card__property">
+                Площадь : 449,22 м² Габариты: 16,7 х 19,5
+              </p>
+              <div class="card__buttons">
+                <a href="#" class="card__button"
+                  ><img src="images/korzinka.svg" alt="korzinka"
+                /></a>
+                <a href="project.html" class="card__button button">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-cataloge__types">
+            <div class="main-cataloge__type">
+              <p class="type-title">3 этажные</p>
+            </div>
+            <div class="main-cataloge__type">от 350м²</div>
+            <div class="main-cataloge__type">от 12 250 000 ₽</div>
+          </div>
+          <div class="main-cataloge__cards container">
+            <div class="main-cataloge__card card">
+              <a href="project.html"
+                ><img class="card__icon" src="images/c-116.jpg" alt="c-116"
+              /></a>
+              <p class="card__discr">Трехэтажные</p>
+              <div class="card__titles-row">
+                <h4 class="card__title">C-116</h4>
+                <div class="card__price">40 000₽</div>
+              </div>
+              <p class="card__property">
+                Габариты: 18,5 х 12,2 Площадь: 660,54 м²
+              </p>
+              <div class="card__buttons">
+                <a href="#" class="card__button"
+                  ><img src="images/korzinka.svg" alt="korzinka"
+                /></a>
+                <a href="project.html" class="card__button button">Подробнее</a>
+              </div>
+            </div>
+            <div class="main-cataloge__card card">
+              <a href="project.html"
+                ><img class="card__icon" src="images/c-115.jpg" alt="c-115"
+              /></a>
+              <p class="card__discr">Трехэтажные</p>
+              <div class="card__titles-row">
+                <h4 class="card__title">С-115</h4>
+                <div class="card__price">40 000₽</div>
+              </div>
+              <p class="card__property">
+                Габариты: 18,7 х 15,0 Площадь: 426 м²
+              </p>
+              <div class="card__buttons">
+                <a href="#" class="card__button"
+                  ><img src="images/korzinka.svg" alt="korzinka"
+                /></a>
+                <a href="project.html" class="card__button button">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <a href="cataloge.html" class="main-cataloge__link"
+            >Посмотреть больше проектов</a
+          >
+        </div>
+        <div class="quality container">
+          <h2 class="quality__title">Что включает в себя проект дома?</h2>
+          <div class="quality__page">
+            <div class="quality__examples">
+              <div class="quality__discr">
+                <p class="quality__discreption">
+                  Проект дома – это документ, по которому будет происходить
+                  строительство дома. В нем содержатся чертежи и вся необходимая
+                  информация о строительных конструкциях, используемых
+                  материалах, коммуникациях и дизайне дома.Среди них:
+                </p>
+              </div>
+              <div class="quality__parameters">
+                <div class="quality__parametr">
+                  <img src="images/pencil.svg" alt="Эскиз проекта" />
+                  <p class="parametr__discr">Эскизный проект</p>
+                </div>
+                <div class="quality__parametr">
+                  <img src="images/cub.svg" alt="Эскиз проекта" />
+                  <p class="parametr__discr">Расчет и подбор фундамента</p>
+                </div>
+                <div class="quality__parametr">
+                  <img src="images/home.svg" alt="Эскиз проекта" />
+                  <p class="parametr__discr">Архитектурное проектирование</p>
+                </div>
+                <div class="quality__parametr">
+                  <img src="images/lestnica.svg" alt="Эскиз проекта" />
+                  <p class="parametr__discr">Расход и стоимость материалов</p>
+                </div>
+                <div class="quality__parametr">
+                  <img src="images/graf.svg" alt="Эскиз проекта" />
+                  <p class="parametr__discr">Конструктивное проектирование</p>
+                </div>
+                <div class="quality__parametr">
+                  <img src="images/pencil.svg" alt="Эскиз проекта" />
+                  <p class="parametr__discr">Объем и стоимость работ</p>
+                </div>
+              </div>
+            </div>
+            <div class="quality__example">
+              <div class="example__row">
+                <p class="example__discr">
+                  <a href="project.html" class="quality__link"
+                    >Посмотреть пример проекта</a
+                  >
+                </p>
+                <img src="images/house1.jpg" alt="" class="quality__image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uniqal-project container">
+          <h2 class="uniqal-project__title">Индивидуальный проект:</h2>
+          <div class="uniqal-project projects">
+            <div class="projects__first">
+              <div class="projects__discrs">
+                <div class="projects__discr">
+                  Площадь дома создана под ваши пожелания
+                </div>
+                <div class="projects__discr">
+                  Проект создается под ваш бюджет
+                </div>
+                <div class="projects__discr">
+                  В проекте будут подходящие для вас материалы
+                </div>
+              </div>
+              <img class="project__icon" src="images/house2.png" alt="" />
+            </div>
+            <div class="projects__second">
+              <img class="project__icon" src="images/house2.png" alt="" />
+              <div class="projects__discrs">
+                <div class="projects__discr">
+                  Состав проекта устанавливаете вы
+                </div>
+                <div class="projects__discr">
+                  Проект создается с учетом рельефа вашего участка
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculation">
+          <div class="calculation__row container">
+            <div class="calculation__buttons">
+              <div class="calculation__button button">
+                <a class="calculation__link" href="#">Рассчитать стоимость</a>
+              </div>
+              <div class="calculation__button">
+                <a class="calculation__link" href="cataloge.html"
+                  >Посмотреть готовые проекты</a
+                >
+              </div>
+            </div>
+            <p class="calculation__discr">
+              Рассчитайте стоимость проектирования за 1 минуту и получите
+              дизайн-проект в подарок
+            </p>
+          </div>
+        </div>
+        <div class="get-you__row">
+          <div class="get-you container">
+            <h3 class="get-you__what">Вы получите:</h3>
+            <div class="get-you__cards container">
+              <div class="get-you__card">
+                <img
+                  src="images/money-svg.svg"
+                  alt="money"
+                  class="get-you__icon"
+                />
+                <h4 class="get-you__title">
+                  Оптимизация затрат на строительство
+                </h4>
+                <p class="get-you__discr">Сократите расходы</p>
+              </div>
+              <div class="get-you__card">
+                <img
+                  src="images/home-svg.svg"
+                  alt="home"
+                  class="get-you__icon"
+                />
+                <h4 class="get-you__title">Эксклюзивный дизайн</h4>
+                <p class="get-you__discr">
+                  Который делает дом комфортным, и функциональным именно для Вас
+                </p>
+              </div>
+              <div class="get-you__card">
+                <img src="images/tick.svg" alt="tick" class="get-you__icon" />
+                <h4 class="get-you__title">Гарантия</h4>
+                <p class="get-you__discr">
+                  Что ваш дом будет соответствовать всем нормам и требованиям
+                </p>
+              </div>
+              <div class="get-you__card">
+                <img src="images/clock.svg" alt="clock" class="get-you__icon" />
+                <h4 class="get-you__title">Сэкономленное время</h4>
+                <p class="get-you__discr">
+                  Ускорение всех этапов строительства и ввода объекта в
+                  эксплуатацию
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-numbers">
+          <div class="our-numbers__top container">
+            <h3 class="our-numbers__title">О нас в цифрах</h3>
+          </div>
+          <div class="our-numbers__bottom container">
+            <div class="our-numbers__cards">
+              <div class="our-numbers__card">
+                <div class="our-numbers__number">> 35 000 м²</div>
+                <div class="our-numbers__discr">
+                  общей площади спроектировано
+                </div>
+              </div>
+              <div class="our-numbers__card">
+                <div class="our-numbers__number">> 300</div>
+                <div class="our-numbers__discr">довольных клиентов</div>
+              </div>
+              <div class="our-numbers__card">
+                <div class="our-numbers__number">> 8</div>
+                <div class="our-numbers__discr">лет опыта в проектировании</div>
+              </div>
+              <div class="our-numbers__card">
+                <div class="our-numbers__number">> 15</div>
+                <div class="our-numbers__discr">лет опыта в строительстве</div>
+              </div>
+              <div class="our-numbers__card">
+                <div class="our-numbers__number">> 90</div>
+                <div class="our-numbers__discr">
+                  готовых проектов частных домов
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="questions container">
+          <p class="questions__faq">FAQ</p>
+          <h3 class="questions__title">Часто задаваемые вопросы</h3>
+          <ul class="questions__list">
+            <li class="questions__item">
+              <p class="questions__quistion">Зачем нужен проект дома?</p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+            <li class="questions__item">
+              <p class="questions__quistion">
+                Возможно ли внести изменения в уже существующий проект? Если да,
+                то сколько это стоит?
+              </p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+            <li class="questions__item">
+              <p class="questions__quistion">
+                Что такое Авторский надзор и нужен ли он?
+              </p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+            <li class="questions__item">
+              <p class="questions__quistion">
+                Лучше делать индивидуальный проект или купить готовый?
+              </p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+            <li class="questions__item">
+              <p class="questions__quistion closed">
+                В чем различие между эскизным и архитектурным проектом?
+              </p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+            <li class="questions__item">
+              <p class="questions__quistion">
+                В каком формате я получу проект?
+              </p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+            <li class="questions__item">
+              <p class="questions__quistion">Как купить?</p>
+              <img
+                class="questions__arrow closed"
+                src="images/arrow-bottom.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="our-team container">
+          <h3 class="our-team__title">Наша команда</h3>
+          <div class="our-team__cards">
+            <div class="our-team__card">
+              <img src="images/human1.jpg" alt="" class="our-team__icon" />
+              <h4 class="our-team__name">Имя Должность</h4>
+              <p class="our-team__discr">Описание Описание Описание</p>
+            </div>
+            <div class="our-team__card">
+              <img src="images/human2.jpg" alt="" class="our-team__icon" />
+              <h4 class="our-team__name">Имя Должность</h4>
+              <p class="our-team__discr">Описание Описание Описание</p>
+            </div>
+            <div class="our-team__card">
+              <img src="images/human3.jpg" alt="" class="our-team__icon" />
+              <h4 class="our-team__name">Имя Должность</h4>
+              <p class="our-team__discr">Описание Описание Описание</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback">
+          <div class="feedback__content container">
+            <img class="feedback__image" src="images/form-img.png" alt="" />
+            <form action="#" class="feedback__form form" method="post">
+              <h3 class="form__title">Остались вопросы?</h3>
+              <p class="form__discr">
+                Оставьте ваш номер телефона и мы вам перезвоним!
+              </p>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Имя"
+                required
+              />
+              <input
+                required
+                type="number"
+                class="form__input"
+                placeholder="+ (   ) -- -- -- --"
+              />
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Город"
+                required
+              />
+              <button class="form__button">Отправить</button>
+              <p class="form__button-discr">
+                Нажимая кнопку «отправить» вы соглашаетесь на обработку
+                персональных данных
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="partners">
+          <h2 class="partners__title">Партнеры</h2>
+          <div class="partners__examples">
+            <div class="partners__row container">
+              <img src="images/hoff.svg" alt="hoff" class="partners__icon" />
+              <img
+                src="images/zanussi.svg"
+                alt="zanussi"
+                class="partners__icon"
+              />
+              <img src="images/lm.svg" alt="l-m" class="partners__icon" />
+              <img
+                src="images/absolut_house.svg"
+                alt="absolute_house"
+                class="partners__icon"
+              />
+              <img src="images/v-b.svg" alt="v-b" class="partners__icon" />
+              <img src="images/bork.svg" alt="v-b" class="partners__icon" />
+              <img src="images/t-des.svg" alt="v-b" class="partners__icon" />
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <h2 class="payment__title">Способы оплаты</h2>
+          <div class="payment__examples">
+            <div class="payment__row container">
+              <div class="payment__card">
+                <img src="images/visa.svg" alt="visa" class="payment__icon" />
+              </div>
+              <div class="payment__card">
+                <img
+                  src="images/mastercard-7 2.svg"
+                  alt="visa"
+                  class="payment__icon"
+                />
+              </div>
+              <div class="payment__card">
+                <img src="images/sbp.svg" alt="visa" class="payment__icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__top container">
+          <div class="footer__content">
+            <div class="footer__discr">
+              <img src="images/big-logo.svg" alt="logo" class="footer__img" />
+              <div class="footer__losung">
+                Современное жилье <br />
+                созданное специально для Вас
+              </div>
+            </div>
+            <div class="footer__list-row">
+              <ul class="footer__list list">
+                <li class="list__item">
+                  <p class="list__title">Разделы</p>
+                </li>
+                <li class="list__item">
+                  <a href="index.html" class="list__link">Главная страница</a>
+                </li>
+                <li class="list__item">
+                  <a href="cataloge.html" class="list__link"
+                    >Каталог проектов</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a href="about-company.html" class="list__link">О компании</a>
+                </li>
+                <li class="list__item">
+                  <a href="basket.html" class="list__link">Корзина</a>
+                </li>
+                <li class="list__item">
+                  <a href="services.html" class="list__link">Услуги</a>
+                </li>
+              </ul>
+              <ul class="footer__list list">
+                <li class="list__item">
+                  <p class="list__title">Как с нами связаться</p>
+                </li>
+                <li class="list__item">
+                  <a href="tel:+79677706688" class="list__link"
+                    >+7 (967) 770 66 88</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a href="mailto:m550ae@gmail.co" class="list__link"
+                    >m550ae@gmail.com</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">Вконтакте</a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__row container">
+            <p class="footer__copyright">Copyright © 2023 Все права защищены</p>
+            <div class="footer__socials">
+              <img
+                src="images/Social icon.svg"
+                alt="social"
+                class="footer__icon"
+              />
+              <img src="images/vk.svg" alt="vkontakte" class="footer__icon" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

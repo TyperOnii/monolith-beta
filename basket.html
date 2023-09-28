@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container-header">
+        <div class="header__header_row container">
+          <a href="index.html"
+            ><img class="header__image" src="images/logo (2).svg" alt="logo"
+          /></a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="cataloge.html">Каталог проектов</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about-company.html">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="services.html">Услуги</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="basket.html">
+            <img
+              class="header__icon"
+              src="images/shopping-bag.svg"
+              alt="Корзина"
+            />
+          </a>
+          <button class="header__burger-menu" id="burger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+      <main class="basket-page">
+        <section class="basket">
+          <div class="basket__content container">
+            <h1 class="basket__title title">Корзина</h1>
+            <div class="basket__blocks">
+              <div id="basket" class="basket__products-block">
+                <div class="basket__products-item">
+                  <h2 class="basket__products-title">Архитектурный проект</h2>
+                  <div class="basket__products-row">
+                    <p class="basket__products-price">16 000₽</p>
+                    <img
+                      class="basket__products-icon"
+                      src="images/cross.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="basket__products-item">
+                  <h2 class="basket__products-title">Архитектурный проект</h2>
+                  <div class="basket__products-row">
+                    <p class="basket__products-price">16 000₽</p>
+                    <img
+                      class="basket__products-icon"
+                      src="images/cross.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="basket__products-item">
+                  <h2 class="basket__products-title">Архитектурный проект</h2>
+                  <div class="basket__products-row">
+                    <p class="basket__products-price">16 000₽</p>
+                    <img
+                      class="basket__products-icon"
+                      src="images/cross.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="basket__products-item">
+                  <h2 class="basket__products-title">Архитектурный проект</h2>
+                  <div class="basket__products-row">
+                    <p class="basket__products-price">16 000₽</p>
+                    <img
+                      class="basket__products-icon"
+                      src="images/cross.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="basket__payment-block">
+                <h2 class="basket__payment-title">Сумма заказа</h2>
+                <div class="basket__payment_row-top">
+                  <p class="basket__payment-discr">
+                    <span>4</span> товара на сумму
+                  </p>
+                  <p class="basket__payment-price">40 000 ₽</p>
+                </div>
+                <div class="basket__payment_row-bottom">
+                  <p class="basket__payment-total">Итого</p>
+                  <p class="basket__payment_total-price">40 000 ₽</p>
+                </div>
+                <input
+                  type="text"
+                  class="basket__promo"
+                  placeholder="Промокод"
+                />
+                <button class="basket__button button">Оформить покупку</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="adding">
+          <div class="adding-content container">
+            <h2 class="adding__title title">Добавьте к заказу</h2>
+            <ul class="structure__list">
+              <li class="structure__item">
+                <p class="structure__discr">Конструктивный раздел</p>
+                <div class="structure__row">
+                  <div class="structure__price">14 000₽</div>
+                  <button data-add href="#" class="structure__button-bag">
+                    <img src="images/korzinka.svg" alt="korzinka" />
+                  </button>
+                  <a href="#" id="modal-6" class="structure__button button btn6"
+                    >Подробнее</a
+                  >
+                </div>
+              </li>
+              <li class="structure__item">
+                <p class="structure__discr">Полный проект</p>
+                <div class="structure__row">
+                  <div class="structure__price">39 900₽</div>
+                  <button data-add href="#" class="structure__button-bag">
+                    <img src="images/korzinka.svg" alt="korzinka" />
+                  </button>
+                  <a href="#" id="modal-8" class="structure__button button btn8"
+                    >Подробнее</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="feedback__content container">
+            <img class="feedback__image" src="images/form-img.png" alt="" />
+            <form action="#" class="feedback__form form" method="post">
+              <h3 class="form__title">Остались вопросы?</h3>
+              <p class="form__discr">
+                Оставьте ваш номер телефона и мы вам перезвоним!
+              </p>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Имя"
+                required
+              />
+              <input
+                required
+                type="number"
+                class="form__input"
+                placeholder="+ (   ) -- -- -- --"
+              />
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Город"
+                required
+              />
+              <button class="form__button">Отправить</button>
+              <p class="form__button-discr">
+                Нажимая кнопку «отправить» вы соглашаетесь на обработку
+                персональных данных
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top container">
+          <div class="footer__content">
+            <div class="footer__discr">
+              <img src="images/big-logo.svg" alt="logo" class="footer__img" />
+              <div class="footer__losung">
+                Современное жилье <br />
+                созданное специально для Вас
+              </div>
+            </div>
+            <div class="footer__list-row">
+              <ul class="footer__list list">
+                <li class="list__item">
+                  <p class="list__title">Разделы</p>
+                </li>
+                <li class="list__item">
+                  <a href="index.html" class="list__link">Главная страница</a>
+                </li>
+                <li class="list__item">
+                  <a href="cataloge.html" class="list__link"
+                    >Каталог проектов</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a href="about-company.html" class="list__link">О компании</a>
+                </li>
+                <li class="list__item">
+                  <a href="basket.html" class="list__link">Корзина</a>
+                </li>
+                <li class="list__item">
+                  <a href="services.html" class="list__link">Услуги</a>
+                </li>
+              </ul>
+              <ul class="footer__list list">
+                <li class="list__item">
+                  <p class="list__title">Как с нами связаться</p>
+                </li>
+                <li class="list__item">
+                  <a href="tel:+79677706688" class="list__link"
+                    >+7 (967) 770 66 88</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a href="mailto:m550ae@gmail.co" class="list__link"
+                    >m550ae@gmail.com</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">Вконтакте</a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__row container">
+            <p class="footer__copyright">Copyright © 2023 Все права защищены</p>
+            <div class="footer__socials">
+              <img
+                src="images/Social icon.svg"
+                alt="social"
+                class="footer__icon"
+              />
+              <img src="images/vk.svg" alt="vkontakte" class="footer__icon" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="modals-1" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-1"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Архитектурный проект
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          В архитектурный проект входит набор чертежей и эскизов, представляющих
+          собой архитектурно-строительную документацию (планы дома, фасадов,
+          этажей, общая информация об объекте), а также чертежи
+          инженерно-коммуникационных систем (водопровода, электроснабжения,
+          отопления, вентиляции, слаботочных сетей и так далее). Разработка этой
+          части проекта позволяет представить себе, как будет выглядеть объект
+          по завершении строительства, каковы будут его основные параметры и
+          характеристики. Выполненная таким образом первая часть пакета
+          документов отправляется на прохождение процедуры и представители
+          соответствующих государственных органов дают свою экспертную оценку
+          проекту, определяя, отвечает ли он существующим строительным нормам и
+          правилам.
+        </p>
+      </div>
+    </div>
+    <div id="modals-2" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-2"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">Эскизный проект</h2>
+        <p class="architectural-modal__discr discr-modal">
+          Эскизный проект содержит описание общей концепции здания или дизайна
+          помещений, внешнего вида фасадов, элементов архитектуры. Документ
+          разрабатывается до начала оформления основного проекта. В содержание
+          эскизного проекта входят текстовые документы, чертежи, рисунки,
+          коллажи, другие графические материалы. На основании документа может
+          оформляться АГР и дизайн-проект. Согласование эскизного проекта
+          осуществляется только с заказчиком.
+        </p>
+      </div>
+    </div>
+    <div id="modals-3" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-3"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">3D визуализация</h2>
+        <p class="architectural-modal__discr discr-modal">
+          Это объёмное фотореалистичное изображение, выполненное в специальных
+          графических редакторах. Оно отражает все нюансы будущего объекта:
+          объём, положение в пространстве с разных ракурсов, детали оформления
+          (цвета, материалы, текстуры).
+        </p>
+      </div>
+    </div>
+    <div id="modals-4" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-4"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">3D модель</h2>
+        <p class="architectural-modal__discr discr-modal">
+          3D модель дает возможность увидеть, как будет выглядеть внешне ещё не
+          построенный дом, оценить фактуру материалов и цветовые решения.
+        </p>
+      </div>
+    </div>
+    <div id="modals-5" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-5"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Фундамент монолитный
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          План фундамента – важнейший этап строительства любого здания. Его
+          точность и информативность обуславливают качество дальнейших работ,
+          поэтому так важно знать общие правила составления плана.
+        </p>
+      </div>
+    </div>
+    <div id="modals-6" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-5"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Конструктивный раздел
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          Конструктивный раздел позволяет просчитать нагрузки на фундамент и
+          перекрытия, рассчитать объем работ и количество строительных
+          материалов. По сути, это подробная инструкция для подрядчика, на
+          основе которой строители возведут здание в точности с вашими
+          требованиями и ожиданиями. Проведенные ранее инженерные расчеты
+          являются основой для проектирования конструктивного проекта.
+        </p>
+      </div>
+    </div>
+    <div id="modals-7" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button id="button-7" class="architectural-modal__button button-modal">
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Смета на строительство
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          Смета защищает заказчика от внезапных, безосновательных изменений
+          стоимости ремонта. Оценивает затраты на материалы. Служит ориентиром
+          для закупок и помогает не потратить лишние деньги. Дает юридические
+          гарантии. На основе сметы суды в спорах между заказчиком и
+          исполнителем выносят решения. Дает инструмент контроля. По смете вы
+          сможете определить, что происходит на объекте. Легко сравнить то, что
+          на бумаге, с тем, что сделано по факту.
+        </p>
+      </div>
+    </div>
+    <div id="modals-8" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-8"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">Полный проект</h2>
+        <p class="architectural-modal__discr discr-modal">
+          Полный состав проекта строительства дома содержит архитектурный,
+          строительный, инженерный разделы. Это комплект чертежей, схем,
+          пояснений, описаний конструкций дома, технологий его строительства,
+          применяемых материалов. Объем от 30 до 150 листов, зависит от
+          этажности, площади дома.
+        </p>
+        <p class="architectural-modal__discr discr-modal">
+          Такая документация полностью подготовлена для возведения домов с их
+          последующей регистрацией в госорганах. Она разрабатывается
+          профессиональными архитекторами, конструкторами, инженерами в
+          соответствии с действующими СНиПами, ГОСТами, правилами. Строить дом
+          по проекту – просто, быстро, безопасно и выгодно. Это сможет любой
+          частник – своими руками, либо строительная организация, фирма или
+          просто бригада. Далее рассмотрим состав и содержание проекта для
+          постройки дома.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

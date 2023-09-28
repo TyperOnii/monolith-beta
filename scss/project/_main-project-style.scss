@@ -1,0 +1,141 @@
+.specifications {
+  padding-top: 50px;
+  margin-bottom: 25px;
+  &__content {
+    column-gap: 26px;
+    row-gap: 21px;
+    display: grid;
+    grid-template-areas:
+      "FP FP SP SP"
+      "FP FP SP SP"
+      "FP FP SP SP"
+      "FP FP MP MP";
+  }
+  &__first-property {
+    grid-template-columns: 1fr;
+    display: grid;
+    row-gap: 15px;
+    padding: 47px 31px 44px 36px;
+    box-shadow: (0px 4px 21px rgba(0, 0, 0, 0.25));
+    grid-area: FP;
+  }
+  &__item {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 189%;
+  }
+  &__second-property {
+    max-height: 260px;
+    box-shadow: (0px 4px 21px rgba(0, 0, 0, 0.25));
+    grid-area: SP;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 42px 100px 42px 109px;
+    gap: 0px 107px;
+  }
+  &__card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+  }
+  &__card-icon {
+    width: 50px;
+  }
+
+  &__card-discr {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 139%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px 0px;
+  }
+  &__price {
+    color: black;
+    align-items: center;
+    display: flex;
+    gap: 0px 15px;
+    box-shadow: (0px 4px 21px rgba(0, 0, 0, 0.25));
+    grid-area: MP;
+    padding: 55px 39px;
+  }
+  &__price-icon {
+  }
+  &__price-discr {
+    color: black;
+    font-size: 22px;
+    line-height: 179%;
+  }
+}
+.span-margin {
+  margin-bottom: -10px;
+}
+.project-page {
+  padding-top: 115px;
+}
+@media screen and (max-width: 1300px) {
+  .specifications__second-property {
+    padding: 42px 50px 42px 50px;
+    gap: 0px 40px;
+  }
+  .specifications__price-discr {
+    color: black;
+    font-size: 18px;
+    line-height: 179%;
+  }
+}
+@media screen and (max-width: 1176px) {
+  .specifications__first-property {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    row-gap: 12px;
+    padding: 30px 23px 23px 28px;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+    grid-area: FP;
+  }
+  .specifications__second-property {
+    padding: 42px 25px 42px 25px;
+    gap: 0px 20px;
+  }
+  .specifications__item {
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .specifications__card-discr {
+    font-size: 18px;
+    line-height: 139%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .specifications__first-property {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .specifications__item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .specifications__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .specifications__content {
+    column-gap: 26px;
+    row-gap: 21px;
+    display: grid;
+    grid-template-areas:
+      "SP SP SP SP"
+      "FP FP FP FP"
+      "FP FP FP FP"
+      "MP MP MP MP";
+  }
+}

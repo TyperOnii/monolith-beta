@@ -1,0 +1,92 @@
+@import "./const/vars";
+@import "./const/setting";
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/main-page";
+@import "./blocks/main-cataloge";
+@import "./blocks/quality";
+@import "./blocks/uniqal-project";
+@import "./blocks/calculation";
+@import "./blocks/get-you";
+@import "./blocks/our-numbers";
+@import "./blocks/questions";
+@import "./blocks/our-team";
+@import "./blocks/feedback";
+@import "./blocks/partners";
+@import "./blocks/payment";
+@import "./cataloge/cataloge-page";
+@import "./about-company/main-about";
+@import "./services/services-page";
+@import "./project/main-project-style";
+@import "./project/discription";
+@import "./project/structure";
+@import "./basket/basket";
+@import "./basket/adding";
+@import "./blocks/modalki";
+
+.container {
+  max-width: 1411px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  flex: 1 0 auto;
+}
+.button {
+  color: $white;
+  background-color: $accent;
+  &:hover {
+    transition: all 0.15s ease-in;
+    box-shadow: 0px 4px 9px 0px #5f5dff, 0px -1px 9px 0px #5754ff;
+  }
+}
+.hidden {
+  display: none;
+}
+a {
+  color: inherit;
+}
+.title {
+  color: $font-blue;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+@media screen and (max-width: 1250px) {
+  .block-title {
+    font-size: 35px;
+  }
+  .block-discr {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 35px;
+  }
+  .block-discr {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+}
+.block-title {
+  font-size: 30px;
+  line-height: 132%;
+  margin-bottom: 20px;
+}
+.block-discr {
+  font-size: 18px;
+  line-height: 136%;
+}

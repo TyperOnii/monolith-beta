@@ -1,0 +1,27 @@
+.discription {
+  margin-bottom: 73px;
+  &__content {
+    padding: 51px 50px 50px 36px;
+    box-shadow: (0px 4px 21px rgba(0, 0, 0, 0.25));
+  }
+  &__item {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    &:last-child {
+      margin: 0px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .discription__item {
+    line-height: 130%;
+  }
+  .discription__content {
+    padding: 34px 20px 20px 27px;
+  }
+  .specifications__price {
+    gap: 10px;
+    padding: 15px 20px;
+  }
+}

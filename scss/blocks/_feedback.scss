@@ -1,0 +1,115 @@
+.feedback {
+  margin-bottom: 72px;
+  &__content {
+    display: flex;
+    gap: 0px 94px;
+  }
+
+  &__form {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px 0px;
+  }
+}
+.form {
+  &__title {
+    max-width: 500px;
+    color: $font-blue;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66px;
+  }
+  &__discr {
+    color: #000;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  &__input {
+    padding-left: 23px;
+    max-width: 471px;
+    height: 53px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 135%;
+  }
+  &__button {
+    background-color: $accent;
+    padding: 17px 189px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 135%;
+    &:hover {
+      transition: all 0.15s ease-in;
+      color: $accent;
+      background-color: white;
+      box-shadow: 0px 4px 9px 0px #fff, 0px -1px 9px 0px #fff;
+    }
+  }
+  &__button-discr {
+    color: #2c2c2c;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+.feedback__image {
+  max-width: 900px;
+  width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .feedback__form {
+    margin-top: 80px;
+  }
+  .feedback__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__button {
+    max-width: 471px;
+  }
+  .form__discr {
+    max-width: 450px;
+  }
+  .form__button-discr {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__input {
+    max-width: 400px;
+  }
+  .form__button-discr {
+    max-width: 350px;
+  }
+  .form__button {
+    padding: 17px 150px;
+  }
+  .form__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .form__input {
+    max-width: 370px;
+  }
+  .form__button {
+    padding: 17px 130px;
+  }
+  .form__title {
+    font-size: 35px;
+  }
+}

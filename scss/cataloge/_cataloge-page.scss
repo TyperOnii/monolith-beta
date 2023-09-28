@@ -1,0 +1,23 @@
+.cataloge-page__title {
+  padding-top: 150px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.cataloge-page__cards {
+  row-gap: 150px;
+}
+@media screen and (max-width: 1200px) {
+  .cataloge-page__cards {
+    row-gap: 80px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cataloge-page__cards {
+    row-gap: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cataloge-page__cards {
+    row-gap: 40px;
+  }
+}
